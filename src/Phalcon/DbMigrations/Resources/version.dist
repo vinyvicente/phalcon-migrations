@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * Class Version
+ */
+class Version[VERSION] extends \Phalcon\DbMigrations\AbstractVersion
+{
+    public function up()
+    {
+        // ... executes migrations
+    }
+
+    public function down()
+    {
+        // ... executes rollbacks
+    }
+}
