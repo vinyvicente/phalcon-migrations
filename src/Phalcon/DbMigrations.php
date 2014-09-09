@@ -7,7 +7,6 @@ namespace Phalcon;
  */
 class DbMigrations
 {
-
     /**
      * @var string
      */
@@ -20,7 +19,7 @@ class DbMigrations
 
     public function generate()
     {
-        $version = time();
+        $version = date('Ymd') . time();
         $content = file_get_contents(__DIR__ . '/DbMigrations/Resources/version.dist');
         $content = str_replace('[VERSION]', $version, $content);
 
